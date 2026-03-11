@@ -1,26 +1,92 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-montserrat: "Montserrat", Arial, sans-serif;
+
+  --offwhite:  #FAFAF8;
+  --navy2:     #F2F0EB;
+  --navy3:     #EEF0F5;
+  --card:      #FFFFFF;
+
+  --teal:      #00A8B5;
+  --teal2:     #007A87;
+  --magenta:   #C4006E;
+  --purple:    #6B32A8;
+  --gold:      #B8920F;
+
+  --ink:       #18181A;
+  --muted:     #6B6B70;
+  --border:    #E2E0DB;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--offwhite);
+  color: var(--ink);
+  font-family: var(--font-montserrat);
+  font-weight: 400;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--teal), var(--magenta));
+  border-radius: 2px;
+}
+
+/* Live dot pulse */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 8px rgba(232,58,42,0.7); }
+  50%       { opacity: 0.5; box-shadow: 0 0 3px rgba(232,58,42,0.3); }
+}
+
+/* Orb drifts */
+@keyframes drift1 {
+  0%, 100% { transform: translate(0,0); }
+  50%       { transform: translate(-40px, 50px); }
+}
+@keyframes drift2 {
+  0%, 100% { transform: translate(0,0); }
+  50%       { transform: translate(35px, -40px); }
+}
+
+/* Marquee */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.mq-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+.mq-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 32px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.mq-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
