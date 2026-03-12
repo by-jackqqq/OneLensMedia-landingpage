@@ -10,6 +10,7 @@ const NAV_LINKS = [
     { label: "Layanan", href: "#layanan" },
     { label: "Cara Kerja", href: "#cara-kerja" },
     { label: "Paket", href: "#paket" },
+    { label: "Tentang", href: "/tentang" },
     { label: "Testimoni", href: "#testimoni" },
     { label: "FAQ", href: "#faq" },
 ];

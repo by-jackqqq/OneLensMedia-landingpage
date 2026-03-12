@@ -108,7 +108,7 @@ export default function Hero() {
                                 </motion.h1>
 
                                 <motion.p {...fu(0.15)} style={{ color: "#6B6B70", fontSize: "0.95rem", lineHeight: 1.7, maxWidth: 420, marginBottom: 28 }}>
-                                        OneLens Media menghadirkan layanan live streaming profesional untuk berbagai event sekolah dan komunitas - mulai dari wisuda, pengajian, hingga pentas seni. Jernih, stabil, dan siap disaksikan dari mana saja.
+                                        OneLens Media menghadirkan layanan live streaming profesional untuk berbagai event sekolah dan komunitas — mulai dari wisuda, pengajian, hingga pentas seni. Jernih, stabil, dan siap disaksikan dari mana saja.
                                 </motion.p>
 
                                 <motion.div {...fu(0.25)} style={{ display: "flex", flexWrap: "wrap", gap: 12, marginBottom: 32 }}>
@@ -243,7 +243,7 @@ export default function Hero() {
                                         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
                                             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
                                                 <h4 style={{ fontSize: 13, fontWeight: 600, color: "#18181A" }}>Behind the Scene</h4>
-                                                <span style={{ fontFamily: "Arial,sans-serif", fontSize: 11, color: "#6B6B70" }}>OneLens Media Crew</span>
+                                                <span style={{ fontFamily: "Arial,sans-serif", fontSize: 11, color: "#6B6B70" }}>Oneens Media Crew</span>
                                             </div>
                                             <div style={{ height: 2, background: "rgba(0,0,0,.06)", borderRadius: 2, overflow: "hidden" }}>
                                                 <div style={{ height: "100%", width: "58%", background: "linear-gradient(90deg,#00A8B5,#6B32A8)", borderRadius: 2 }} />

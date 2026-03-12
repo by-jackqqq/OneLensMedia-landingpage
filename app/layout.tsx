@@ -24,9 +24,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id" className={montserrat.variable}>
-      <body>
+      <body suppressHydrationWarning>
         <Navbar />
-        <main className="pt-[68px]">{children}</main>
+        <main className="">{children}</main>
       </body>
     </html>
   );
