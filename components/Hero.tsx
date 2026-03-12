@@ -243,7 +243,7 @@ export default function Hero() {
                                         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
                                             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
                                                 <h4 style={{ fontSize: 13, fontWeight: 600, color: "#18181A" }}>Behind the Scene</h4>
-                                                <span style={{ fontFamily: "Arial,sans-serif", fontSize: 11, color: "#6B6B70" }}>1ens Media Crew</span>
+                                                <span style={{ fontFamily: "Arial,sans-serif", fontSize: 11, color: "#6B6B70" }}>OneLens Media Crew</span>
                                             </div>
                                             <div style={{ height: 2, background: "rgba(0,0,0,.06)", borderRadius: 2, overflow: "hidden" }}>
                                                 <div style={{ height: "100%", width: "58%", background: "linear-gradient(90deg,#00A8B5,#6B32A8)", borderRadius: 2 }} />
