@@ -12,9 +12,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "1ens Media — Live Streaming Vendor",
+  title: "OneLens Media - Jasa Live Streaming Event Sekolah & Komunitas",
   description:
-    "1ens Media menghadirkan produksi live streaming premium — dari wedding intim hingga konser ribuan penonton.",
+    "Layanan live streaming untuk wisuda, pengajian, seminar, dan event komunitas dengan produksi rapi, stabil, dan kualitas visual yang jernih.",
 };
 
 export default function RootLayout({
