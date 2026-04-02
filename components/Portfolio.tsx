@@ -174,9 +174,10 @@ export default function Portfolio() {
                 p.title.toLowerCase().includes(q) || p.category.toLowerCase().includes(q)
             );
 
-        return [...data].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+        // Sort descending by id
+        return [...data].sort((a, b) => b.id - a.id);
     }, [query]);
-
+    
     const totalPages = Math.max(1, Math.ceil(filtered.length / ITEMS_PER_PAGE));
     const safePage = Math.min(page, totalPages);
     const pageItems = filtered.slice((safePage - 1) * ITEMS_PER_PAGE, safePage * ITEMS_PER_PAGE);
