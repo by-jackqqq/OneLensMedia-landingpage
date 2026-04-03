@@ -199,7 +199,7 @@ export default function Portfolio() {
 
     return (
         <section id="portfolio" style={{
-            position: "relative", background: "#F5F3EF",
+            position: "relative", background: "#FAFAF8",
             padding: "88px 0 96px", overflow: "hidden",
         }}>
             <div style={{

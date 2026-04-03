@@ -1,4 +1,5 @@
 import AboutUs from "@/components/AboutUs";
+import Contact from "@/components/Contact";
 import EventMarquee from "@/components/EventMarquee";
 import Faq from "@/components/Faq";
 import Hero from "@/components/Hero";
@@ -14,7 +15,8 @@ export default function Home() {
       <EventMarquee />
       <Portfolio />
       <HowItWorks />
-      <Faq/>
+      <Faq />
+      <Contact />
     </>
   );
 }

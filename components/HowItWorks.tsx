@@ -256,10 +256,7 @@ export default function HowItWorks() {
     return (
         <section id="cara-kerja" style={{
             position: "relative",
-            background: "#FFFFFF",
-            borderTop: "1px solid #E2E0DB",
-            borderBottom: "1px solid #E2E0DB",
-            padding: "88px 0 96px",
+            background: "#FAFAF8",
             overflow: "hidden",
         }}>
             {/* Orb bg */}
