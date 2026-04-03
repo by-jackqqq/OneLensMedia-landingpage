@@ -384,39 +384,6 @@ export default function Portfolio() {
                     </p>
                 )}
 
-                {/* ── CTA ── */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}
-                    style={{ textAlign: "center", marginTop: 56, paddingTop: 48, borderTop: "1px solid #E2E0DB" }}
-                >
-                    <p style={{ color: "#6B6B70", fontSize: "0.9rem", marginBottom: 6 }}>
-                        Ingin event Anda masuk ke portfolio kami?
-                    </p>
-                    <p style={{ fontFamily: "var(--font-montserrat)", fontWeight: 700, fontSize: "1.05rem", color: "#18181A", marginBottom: 24 }}>
-                        Jadwalkan sesi live streaming Anda sekarang.
-                    </p>
-                    <a href="#kontak" style={{
-                        display: "inline-flex", alignItems: "center", gap: 8,
-                        padding: "12px 28px", borderRadius: 10,
-                        fontFamily: "var(--font-montserrat)", fontSize: "0.88rem", fontWeight: 600,
-                        color: "white", textDecoration: "none",
-                        background: "linear-gradient(135deg,#00A8B5,#6B32A8)",
-                        boxShadow: "0 4px 20px rgba(0,168,181,0.28)",
-                        transition: "transform 0.2s, box-shadow 0.2s",
-                    }}
-                        onMouseEnter={e => {
-                            (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)";
-                            (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 28px rgba(0,168,181,0.38)";
-                        }}
-                        onMouseLeave={e => {
-                            (e.currentTarget as HTMLElement).style.transform = "";
-                            (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 20px rgba(0,168,181,0.28)";
-                        }}
-                    >
-                        Hubungi Kami <ExternalLink size={14} strokeWidth={2.5} />
-                    </a>
-                </motion.div>
             </div>
 
             <style>{`
