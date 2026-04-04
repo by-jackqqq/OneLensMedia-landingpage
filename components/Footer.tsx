@@ -258,9 +258,28 @@ export default function Footer() {
                         margin: "0 24px",
                     }} />
 
-                    <span style={{ fontSize: "0.78rem", color: "#ADADB0", fontFamily: "var(--font-montserrat)" }}>
-                        Built by JQ.WORKS
-                    </span>
+                    <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                        <span style={{ fontSize: "0.78rem", color: "#ADADB0", fontFamily: "var(--font-montserrat)" }}>
+                            Built by
+                        </span>
+                        <motion.a
+                            href="https://jqworks.id"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            whileHover={{ opacity: 0.75, scale: 1.04 }}
+                            whileTap={{ scale: 0.95 }}
+                            transition={{ duration: 0.15 }}
+                            style={{ display: "flex", alignItems: "center", textDecoration: "none" }}
+                        >
+                            <Image
+                                src="/images/jqworks.png"
+                                alt="JQ.WORKS"
+                                width={72}
+                                height={20}
+                                style={{ height: 18, width: "auto", objectFit: "contain", display: "block" }}
+                            />
+                        </motion.a>
+                    </div>
                 </div>
             </div>
 
