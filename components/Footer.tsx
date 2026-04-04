@@ -259,7 +259,7 @@ export default function Footer() {
                     }} />
 
                     <span style={{ fontSize: "0.78rem", color: "#ADADB0", fontFamily: "var(--font-montserrat)" }}>
-                        Built by JQ.works
+                        Built by JQ.WORKS
                     </span>
                 </div>
             </div>
