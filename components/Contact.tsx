@@ -275,7 +275,7 @@ Terima kasih atas perhatian dan responnya `
                         viewport={{ once: true }} transition={{ duration: 0.55, delay: 0.08 }}
                         style={{
                             fontFamily: "var(--font-montserrat)",
-                            fontWeight: 300,
+                            fontWeight: 700,
                             fontSize: "clamp(1.8rem, 4vw, 3rem)",
                             lineHeight: 1.2,
                             color: "#18181A",
@@ -284,7 +284,7 @@ Terima kasih atas perhatian dan responnya `
                     >
                         Ceritakan kebutuhan{" "}
                         <em style={{
-                            fontStyle: "italic", fontWeight: 300,
+                            fontStyle: "italic", fontWeight: 600,
                             background: "linear-gradient(120deg,#00A8B5 0%,#6B32A8 50%,#C4006E 100%)",
                             WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text",
                         }}>

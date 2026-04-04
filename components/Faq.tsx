@@ -201,7 +201,7 @@ export default function FAQ() {
             <div style={{ maxWidth: 768, margin: "0 auto", padding: "0 24px", position: "relative", zIndex: 1 }} className="faq-container">
 
                 {/* ── Header ── */}
-                <div style={{ textAlign: "center", padding: "0 24px", marginBottom: 52, position: "relative", zIndex: 1 }}>
+                <div style={{ textAlign: "center", marginBottom: 52 }}>
                     <motion.div
                         initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }} transition={{ duration: 0.5 }}
@@ -209,7 +209,7 @@ export default function FAQ() {
                     >
                         <span style={{ width: 28, height: 2, background: "linear-gradient(90deg,#00A8B5,#6B32A8)", borderRadius: 2, display: "block" }} />
                         <span style={{ fontFamily: "var(--font-montserrat)", fontSize: 11, color: "#6B6B70", letterSpacing: "0.12em", textTransform: "uppercase" }}>
-                            FAQ
+                            Ajak Kami
                         </span>
                         <span style={{ width: 28, height: 2, background: "linear-gradient(90deg,#6B32A8,#C4006E)", borderRadius: 2, display: "block" }} />
                     </motion.div>
@@ -218,18 +218,21 @@ export default function FAQ() {
                         initial={{ opacity: 0, y: 22 }} whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }} transition={{ duration: 0.55, delay: 0.08 }}
                         style={{
-                            fontFamily: "var(--font-montserrat)", fontWeight: 700,
-                            fontSize: "clamp(1.8rem,3.2vw,2.7rem)", lineHeight: 1.2,
-                            letterSpacing: "-0.3px", color: "#18181A", marginBottom: 12,
+                            fontFamily: "var(--font-montserrat)",
+                            fontWeight: 700,
+                            fontSize: "clamp(1.8rem, 4vw, 3rem)",
+                            lineHeight: 1.2,
+                            color: "#18181A",
+                            marginBottom: 12,
                         }}
                     >
-                        Pertanyaan Yang{" "}
+                        Pertanyaan yang{" "}
                         <em style={{
                             fontStyle: "italic", fontWeight: 600,
                             background: "linear-gradient(120deg,#00A8B5 0%,#6B32A8 50%,#C4006E 100%)",
                             WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text",
                         }}>
-                            Sering Diajukan
+                            sering diajukan
                         </em>
                     </motion.h2>
                 </div>
